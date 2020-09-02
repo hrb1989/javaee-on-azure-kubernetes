@@ -1,10 +1,15 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: javaee-cafe
+  labels:
+    app: javaee-cafe
   namespace: default
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: javaee-cafe
   template:
     metadata:
       name: javaee-cafe
@@ -13,7 +18,7 @@ spec:
     spec:
       containers:
         - name: javaee-cafe
-          image: <replace_me>.azurecr.io/javaee-azure
+          image: scbacr1.azurecr.io/javaee-cafe-scb
 ---
 apiVersion: v1
 kind: Service
