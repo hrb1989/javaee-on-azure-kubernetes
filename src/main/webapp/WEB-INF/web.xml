@@ -34,6 +34,6 @@
     <data-source>
         <name>java:global/JavaEECafeDB</name>
         <class-name>org.postgresql.ds.PGPoolingDataSource</class-name>
-        <url>jdbc:postgresql://POSTGRES_FQDN.postgres.database.azure.com:5432/postgres?user=AZURE_POSTGRES_ADMIN_USER@AZURE_POSTGRES_SERVER_NAME&amp;password=AZURE_POSTGRES_ADMIN_PASSWORD&amp;sslmode=require</url>
+        <url>jdbc:postgresql://AZURE_POSTGRES_SERVER_NAME.postgres.database.azure.com:5432/postgres?user=AZURE_POSTGRES_ADMIN_USER@AZURE_POSTGRES_SERVER_NAME&amp;password=AZURE_POSTGRES_ADMIN_PASSWORD&amp;sslmode=require</url>
     </data-source>
 </web-app>
